@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Exercise 2: Select by Class Name
+Select all elements with the class name "myClass" and change their text content to "I was selected by class name."
+-->
+
+<div class="myClass">ok</div>
+<div class="myClass">ok</div>
+<div class="myClass">ok</div>
+<div class="myClass">ok</div>
+<div class="myClass">ok</div>
+
+<script>
+    var myClass = document.querySelectorAll(".myClass")
+
+   myClass.forEach(abc=>{
+    abc.innerText = "malli";
+   });
+</script>
+
+</body>
+</html>

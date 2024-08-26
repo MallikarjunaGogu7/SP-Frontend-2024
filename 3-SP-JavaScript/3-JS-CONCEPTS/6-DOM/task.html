@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="div"><button type="button" id="btn" onmouseover="mouseOver()" onmouseout="mouseOut()">click me</button></div>
+
+    <script>
+
+            var newbtn = document.createElement("button");
+            newbtn.innerText = "click me";
+
+            newbtn.style.color="black";
+            newbtn.style.backgroundColor="yellow";
+            newbtn.style.border="5px solid red";
+            
+
+            var div = document.getElementById("div");
+            var btn = document.getElementById("btn");
+        function mouseOver(){
+             div.insertBefore(newbtn, btn);
+        }
+
+        function mouseOut(){
+            newbtn.remove()
+        }
+    </script>
+</body>
+</html>

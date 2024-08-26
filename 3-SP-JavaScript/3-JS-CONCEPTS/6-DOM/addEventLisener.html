@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="demo" type="button">click me</button>
+
+    <script>
+
+        // function first(){
+        //     alert("first functin called");
+        // }
+
+        // function second(){
+        //     alert("second function called")
+        // }
+
+        // var btn = document.getElementById("demo")
+
+        // btn.addEventListener("click",first);
+        // btn.addEventListener("click",second)
+
+        function Greet(){
+            alert("good morning");
+        }
+        // var btn = document.getElementById("demo");
+        // btn.addEventListener("click",Greet);
+        // btn.removeEventListener("click",Greet);
+        var btn = document.getElementById("demo");
+        btn.addEventListener("mouseover",Greet);
+        // btn.removeEventListener("mouseout",Greet);
+    </script>
+</body>
+</html>

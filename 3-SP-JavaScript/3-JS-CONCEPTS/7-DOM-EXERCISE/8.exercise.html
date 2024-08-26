@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+    Exercise 3: Select by Tag Name
+    Select all <p> elements and change their text content to "I was selected by tag name."-->
+
+    <p>doctor doom</p>
+    
+    <script>
+        var para = document.getElementsByTagName("p");
+        para.innerText = "I was selceted by tag name."
+        document.write(para.innerText)
+    </script>
+</body>
+</html>

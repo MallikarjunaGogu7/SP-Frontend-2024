@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+    Exercise 5: Event Handling
+Create a button that changes the text content of a <p> element when clicked.-->
+
+    <button id="btn" type="button" onclick="fun()">click</button>
+    <p id="para">lajslkfj</p>
+
+    <script>
+
+        var btn = document.getElementById("btn");
+        var para = document.getElementById("para");
+        function fun(){
+            para.textContent = "you changed the text content"
+
+        }
+    </script>
+    
+</body>
+</html>

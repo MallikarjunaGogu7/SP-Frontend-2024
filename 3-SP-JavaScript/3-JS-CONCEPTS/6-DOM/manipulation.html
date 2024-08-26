@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div id="one">
+        <p>welcome to india</p>
+        <p id="last">welcome to usa</p>
+    </div>
+
+    <img src = "https://cdn.britannica.com/62/94662-050-A6148AE4/Union-Jack-flag-United-Kingdom-flags-Scotland.jpg" height="200px" width="200px" id="img">
+
+    <script>
+
+        var newEle = document.createElement("button");
+        newEle.innerText = "welcome to portugal"
+
+        var currEle = document.getElementById("one")
+
+        //currEle.appendChild(newEle)  //1
+
+        var lastEle = document.getElementById("last")
+
+       //currEle.insertBefore(newEle,lastEle)  //2
+
+       //lastEle.replaceChildren(newEle); //3
+
+       //lastEle.remove();
+
+       //getAttribute
+
+       var img = document.getElementById("img")
+       console.log(img.getAttribute("src"));
+
+
+       //setAttribute
+       img.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLsx6VdWDmitVPjZU-4MdDTfmqdRAEgz0nQg&s")
+    </script>
+</body>
+</html>

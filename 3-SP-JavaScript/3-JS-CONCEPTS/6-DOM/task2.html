@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="div"></div>
+    <button type="button" id="btn1" onclick="fun()"  >click to open</button>
+    <button type="button" id="btn2" onmouseout="hide()">click to close</button>
+    
+
+    <script>
+        var div = document.getElementById("div");
+        var btn1 = document.getElementById("btn1");
+        function fun(){
+            div.style.width="200px";
+            div.style.height="200px";
+            div.style.backgroundColor="green";
+
+        }
+        function hide(){
+            div.remove();
+        }
+    </script>
+</body>
+</html>

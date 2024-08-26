@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome mr mallikarjuna</h1>
+    <div></div>
+    <div class="container"></div>
+
+    <script>
+        /*
+        Exercise 3: Add a New Element
+        Create a new <p> element with the text "This is a new paragraph." and append it to a <div> element with the id "container".*/
+
+            var el = document.createElement("p");
+            el.innerText = "you are super man";
+
+            document.querySelector("div").appendChild(el);
+
+            var para = document.createElement("p");
+            para.innerText =  "This is a new paragraph."
+            document.querySelector(".container").appendChild(para)
+            
+    </script>
+    
+</body>
+</html>

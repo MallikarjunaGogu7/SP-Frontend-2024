@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .helo{
+            font-size: 50px;
+            background-color: lime;
+        }
+        .d{
+            background-color: red;
+            color:purple;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="india">Welcome to India
+        kjzxlcvjbbv
+        xbljvckbj
+        zxcnjb
+    </h1>
+    <p class="fam">paragapn 1</p>
+    <p class="fam">paragrap2</p>
+    <p class="dev">paragra3</p>
+    <p class="dev">paragrap4</p>
+    
+    <script>
+        var i=document.getElementById("india")
+        //console.log(i);
+        var fam = document.getElementsByClassName("fam");
+        //console.log(fam);
+        var p = document.getElementsByTagName("p");
+        //console.log(p)
+        var qs = document.querySelector(".fam");
+        console.log(qs);
+        
+        var qsa = document.querySelectorAll("p");
+        console.log(qsa);
+
+        //var style = document.querySelector("h1");
+        //style.style("color","green");
+
+        var fire = document.getElementById("india");
+        //fire.innerHTML = "welcome to portugal"
+        //fire.innerText = "Welcome to France"
+        //fire.textContent = "welcome to germany"
+        //console.log(fire.textContent) // it will add block lines
+        //console.log(fire.innerText)// it will show same exact 
+
+        var  india = document.getElementById("india");
+        //india.style.backgroundColor="yellow";
+        //india.style.color="blue";
+        india.classList.add("helo", "d");
+        india.classList.remove("d")
+
+
+    </script>
+</body>
+</html>
