@@ -1,0 +1,54 @@
+<!-- 7.write a htm code Table cells that span more than one row/column - The rowspan/colspan attribute. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Rowspan and Colspan</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse; /* Collapses table borders */
+        }
+        th, td {
+            border: 1px solid black; /* Adds border to table cells */
+            text-align: center; /* Center-aligns text */
+            padding: 10px; /* Adds padding to table cells */
+        }
+    </style>
+</head>
+<body>
+    <!-- Table with rowspan and colspan -->
+    <table>
+        <!-- Table caption -->
+        <caption>Table with Rowspan and Colspan</caption>
+
+        <!-- Header row -->
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+
+        <!-- First data row -->
+        <tr>
+            <td rowspan="2">Row 1, Column 1<br>(spans 2 rows)</td>
+            <td>Row 1, Column 2</td>
+            <td>Row 1, Column 3</td>
+        </tr>
+
+        <!-- Second data row -->
+        <tr>
+            <td>Row 2, Column 2</td>
+            <td>Row 2, Column 3</td>
+        </tr>
+
+        <!-- Third data row -->
+        <tr>
+            <td>Row 3, Column 1</td>
+            <td colspan="2">Row 3, Column 2<br>(spans 2 columns)</td>
+        </tr>
+    </table>
+</body>
+</html>

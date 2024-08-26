@@ -1,0 +1,30 @@
+<!-- 12.Using an iframe to embed a web page inside another HTML document -->
+
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding a Web Page with Iframe</title>
+    <style>
+        .iframe-container {
+            width: 80%; /* Sets the width of the iframe container */
+            height: 500px; /* Sets the height of the iframe container */
+            border: 2px solid #000; /* Adds a border around the iframe */
+            margin: 0 auto; /* Centers the iframe on the page */
+        }
+    </style>
+</head>
+<body>
+    <h1>Embedded Web Page Example</h1>
+    
+    <!-- Iframe to embed a web page -->
+    <iframe 
+        class="iframe-container" 
+        src="https://www.example.com" 
+        title="Embedded Example Website"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</body>
+</html>

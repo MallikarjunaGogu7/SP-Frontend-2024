@@ -1,0 +1,30 @@
+<!-- 13.Removing the default frameborder from an iframe -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe without Border</title>
+    <style>
+        .iframe-container {
+            width: 80%; /* Sets the width of the iframe */
+            height: 500px; /* Sets the height of the iframe */
+            border: none; /* Removes the default border */
+            display: block; /* Ensures the iframe is treated as a block-level element */
+            margin: 0 auto; /* Centers the iframe horizontally */
+        }
+    </style>
+</head>
+<body>
+    <h1>Embedded Web Page without Border</h1>
+    
+    <!-- Iframe without border -->
+    <iframe 
+        class="iframe-container" 
+        src="https://www.example.com" 
+        title="Embedded Example Website"
+        allowfullscreen>
+    </iframe>
+</body>
+</html>

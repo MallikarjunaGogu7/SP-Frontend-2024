@@ -1,0 +1,51 @@
+<!-- 14.Opening linked web pages inside an iframe -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Links Inside an Iframe</title>
+    <style>
+        .iframe-container {
+            width: 80%; /* Sets the width of the iframe */
+            height: 500px; /* Sets the height of the iframe */
+            border: 1px solid #ccc; /* Adds a light gray border to the iframe */
+            display: block; /* Ensures the iframe is treated as a block-level element */
+            margin: 20px auto; /* Centers the iframe horizontally */
+        }
+        .link-container {
+            text-align: center; /* Centers the links */
+            margin-bottom: 20px; /* Adds some space below the links */
+        }
+        a {
+            margin: 0 15px; /* Adds space between the links */
+            text-decoration: none; /* Removes underline from links */
+            color: #007BFF; /* Sets the link color */
+        }
+        a:hover {
+            text-decoration: underline; /* Underlines links on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Open Links Inside an Iframe</h1>
+
+    <!-- Link container -->
+    <div class="link-container">
+        <!-- Links targeting the iframe -->
+        <a href="https://www.example.com" target="iframe_example">Example.com</a>
+        <a href="https://www.wikipedia.org" target="iframe_example">Wikipedia</a>
+        <a href="https://www.openai.com" target="iframe_example">OpenAI</a>
+    </div>
+    
+    <!-- Iframe where links will open -->
+    <iframe 
+        class="iframe-container" 
+        name="iframe_example" 
+        src="https://www.example.com" 
+        title="Embedded Example Website"
+        allowfullscreen>
+    </iframe>
+</body>
+</html>
