@@ -1,0 +1,38 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+    background-color: grey;
+    margin:0px;
+}
+
+.container{
+    width:100px;
+    height:50px;
+    position:relative;
+    border:3px solid transparent;
+    background-color: yellow;
+    border-radius: 25px;
+    
+}
+
+
+
+.toggle-switch{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top:0;
+    left:0;
+    transition:0.5s;
+    cursor:pointer;
+}
+
+.toggle-switch.on{
+    left:50px;
+    background-color: green;
+
+}
