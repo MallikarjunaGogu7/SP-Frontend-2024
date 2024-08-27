@@ -1,0 +1,165 @@
+Q1)
+1. Write a function that converts a temperature in Celsius to Fahrenheit
+
+function celsToFar(celsius) {
+  return 5/9 *(celcius - 32);
+   }
+console.log(celsToFar(30));
+
+Q2) 2. Write a function that checks if a given number is positive, negative, or zero.
+
+function positiveOrNegative(num) {
+    if(let num==0){
+      console.log(num+"is zero");
+     }
+     else if(num>0){
+      console.log(num+"is positive")
+      }
+      else{
+      console.log(num+"is negative")
+       }
+   
+}
+
+positiveOrNegative(7);
+
+Q3) 3.Extract a portion of a string using the substring method
+
+let string = "hi there earth";
+
+let result = string.substring(0,3);
+console.log(result)
+
+Q4) 4.Remove leading and trailing whitespaces from a string and find before and after 
+length of the given string.
+
+let oldString = "  welcome  ";
+console.log(length(oldString));
+let newString = oldString.trim();
+console.log(length(newString));
+
+Q5) 5.create a person object, Access and print the "name" and "age" properties of the 
+"person" object
+
+const person = {
+ name: "peter"'
+ age: 21 
+}
+
+console.log(person.name);
+cosnole.log(person.age);
+
+Q6) 6.Create an object with properties representing the days of the week. Write a loop 
+to iterate through these properties and print their values
+
+const week = {
+ day1: "moday",
+ day2: "tuesday",
+ day3: "wednesday",
+ day4: "thursday",
+ day5: "friday",
+ day6: "saturday",
+ day7: "sunday"
+ 
+}
+
+for(let day of week) {
+console.log(day);
+}
+
+Q7)7. How do you flatten a nested array in JavaScript?
+
+const nestedArray = [1, 2, [3, 4, [5, 6]]];
+
+
+const flattenedArray = nestedArray.flat();
+console.log(flattenedArray);
+
+Q8)8.How do you remove a specific element from an array
+
+const array = [2, 4, 6, 8];
+
+const newArray = array.remove(2);
+
+console.log(newArray);
+
+Q9)9. How do you check if an array contains a specific value
+
+
+const arr = [1, 2, 3, 4, 5];
+const value = 3;
+
+if (arr.includes(value)) {
+    console.log("Array has value.");
+} else {
+    console.log("Array does not contain the value.");
+}
+
+
+Q10).Add a New Element
+Create a new <p> element with the text "This is a new paragraph." and append it to 
+a <div> element with the id "container"
+
+
+
+<script>
+
+let container = document.getElementById("container");
+
+let newEle = createElement("p")
+
+newEle.innerText = "This is a new paragraph."
+
+container.appendChild(newEle)
+
+
+
+</script>
+
+Q11). Select by ID
+Select the element with the ID "my Element" and change its text content to "I was 
+selected by ID.
+
+
+let element = document.getElementById("my Element");
+
+let res = newEle.innerText = "I was selected by ID.";
+
+cosnole.log(res);
+
+
+
+12Q).write js code age is greater than 16 and the owns Car variable is true, the if 
+block will run. The message printed to the console will be "sathya is old enough to 
+drive and has his own car.
+
+
+let age = paarseInt(promt("Enter the age"));
+   let car = true;
+   
+   if(age > 16 && car === true) {
+       console.log(sathya is ${age} enough to drive and his own car);
+   }
+   
+   else{
+     console.log("not have car")
+   }
+
+
+
+13Q).Make a "Good Night" greeting if the hour is greter than 21:00
+
+const time = new Date();
+
+const currentHour = time.getHours();
+
+if (currentHour >= 21) {
+  console.log("Good Night");
+}
+
+
+
+
+
+
+    
