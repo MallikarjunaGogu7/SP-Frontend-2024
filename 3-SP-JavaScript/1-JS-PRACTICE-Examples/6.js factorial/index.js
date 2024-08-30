@@ -1,12 +1,11 @@
-function fact(n){
+function fact(n)
+{
     let result=1 ;
-    for(let i =1; i<=n ; i++){
-        result = result * i;
-        
+    for(let i =1; i<=n ; i++)
+    {
+        result = result * i;   
     }
-    return result;
-    
-
+    return result;    
 }
 
-console.log(fact(6));
+console.log(fact(6)); // printing factorial of 6 
